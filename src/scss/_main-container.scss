@@ -47,6 +47,11 @@ main{
                     border-radius:20px ;
                     font-weight: bold;
                     cursor: pointer;
+                    transition: 0.7s;
+                    &:hover{
+                        transition: 0.7s;
+                        background-color: darkred;
+                    }
                 }
             }
         }
@@ -295,7 +300,7 @@ main{
                }
                &::-webkit-scrollbar{
                 background-color: transparent;
-                height: 0.5vw;
+                height: 0.6vw;
             }
             &::-webkit-scrollbar-thumb{
                 background-color: rgba(128, 128, 128, 0.329);
@@ -328,6 +333,12 @@ main{
                       border-radius: 50%;
                       font-size: $fs-p;
                       cursor: pointer;
+                      transition: 0.7s;
+                      &:hover{
+                        transition: 0.7s;
+                        background-color: darkred;
+                        color: white;
+                    }
                   }
               }
                 
