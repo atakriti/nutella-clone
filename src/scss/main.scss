@@ -1,6 +1,7 @@
 @import "./var";
 @import "./header";
 @import "./main-container";
+@import "./footer";
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Rubik:ital@1&display=swap');
 *{
     margin: 0;
@@ -8,4 +9,43 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
+}
+body{
+    .pop{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 6;
+        width: 19%;
+        padding: 2%;
+        .pop-btn{
+           width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: $fs-p;
+            padding: 4% 0;
+            position: relative;
+            border-radius:20px ;
+            border: none;
+            outline: none;
+            background-color: white;
+            box-shadow: 1px 1px 10px black;
+            .fa-circle-xmark{
+                position: absolute;
+                left: -5%;
+                font-size: calc($fs-p + 0.3vw);
+            }
+            .fa-cart-shopping{
+                color: $red;
+            }
+            p{
+                color: $red;
+                border: 1px red solid;
+                padding: 2% 7%;
+                border-radius:20px ;
+                font-weight: bold;
+            }
+        }
+    }
 }
