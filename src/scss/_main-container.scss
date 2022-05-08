@@ -1,6 +1,10 @@
 body{
 
     main{
+        // =========================== Disabled Drop menu ======================
+        #drop{
+            display: none;
+        }
         // ========================================== Baner ========
         .baner{
             width: 100%;
@@ -468,6 +472,7 @@ body{
                 font-weight: bold;
             }
         }
+        
     }
     
 }
