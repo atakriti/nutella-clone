@@ -726,7 +726,6 @@ footer .footer-con ul li a {
     width: 100%;
     background-color: rgb(228, 10, 10);
     overflow: scroll;
-    white-space: nowrap;
   }
   body main #drop .top-section {
     display: flex;
