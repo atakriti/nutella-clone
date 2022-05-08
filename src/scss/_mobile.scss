@@ -247,6 +247,7 @@
                 flex-direction: column;
                 margin-bottom: 10%;
                 padding: 3% 0;
+                
                 a{
                     display: flex;
                     text-decoration: none;
@@ -266,10 +267,37 @@
                     width: 80%;
                 }
             //  ========================== info ================
+            #info2{
+                animation: drop1 2s;
+                @keyframes drop1 {
+                    from{
+                        height: 10vw;
+                        // opacity: 0;
+                    }
+                    to{
+                        height: 36vw;
+                        // opacity: 1;
+                    }
+                }
+
+            }
             .info{
                 background-color:white;
                 width: 100%;
                 padding: 2%;
+                animation: listDown 2s;
+                 overflow: hidden;
+                @keyframes listDown {
+                    from{
+                        height: 10vw;
+                        // opacity: 0;
+                    }
+                    to{
+                        height: 100vw;
+                        // opacity: 1;
+
+                    }
+                }
                 .info-container{
                     display: flex;
                     justify-content: space-between;
@@ -441,5 +469,21 @@
         }
       }
     }
+  }
+  @keyframes dropUp {
+      from{
+          height: 100vw;
+      }
+      to{
+          height: 0;
+      }
+  }
+  @keyframes dropUp1 {
+      from{
+          height: 36vw;
+      }
+      to{
+          height: 0;
+      }
   }
 }
