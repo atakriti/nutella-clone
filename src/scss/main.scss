@@ -35,6 +35,7 @@ body{
                 position: absolute;
                 left: -5%;
                 font-size: calc($fs-p + 0.3vw);
+                cursor: pointer;
             }
             .fa-cart-shopping{
                 color: $red;
@@ -48,4 +49,5 @@ body{
             }
         }
     }
+    
 }
