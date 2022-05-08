@@ -1,127 +1,151 @@
-main{
-    // ========================================== Baner ========
-    .baner{
-        width: 100%;
-        position: relative;
-        .mo{
-            display: none;
-        }
-        // img
-        a{
-            display: flex;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        }
-        // baner text
-        .baner-text{
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 60%;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            .baner-text-con{
-                width: 30%;
-                display: flex;
-                flex-direction: column;
-                p{
-                    font-size: $fs-p;
-                    font-weight: bold;
-                    color: $red;
-                }
-                h1{
-                    font-size: 2.5vw;
-                    margin: 5% 0;
-                    line-height: 1;
-                }
-                button{
-                    width: 80%;
-                    font-size: $fs-1;
-                    color: white;
-                    background-color: $red;
-                    border: none;
-                    outline: none;
-                    padding: 3% 3%;
-                    border-radius:20px ;
-                    font-weight: bold;
-                    cursor: pointer;
-                    transition: 0.7s;
-                    &:hover{
-                        transition: 0.7s;
-                        background-color: darkred;
-                    }
-                }
-            }
-        }
-    }
-    // ===================================== What new ==================
-    .what-new{
-        width: 100%;
-        position: relative;
-        padding-bottom: 4%;
-        // video
-        a{
-            display: flex;
-            video{
-                width: 100%;
-                height: 100%;
-            }
+body{
 
-        }
-        .what-new-con{
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            width: 60%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            // _____________________ Top________________
-            .top{
+    main{
+        // ========================================== Baner ========
+        .baner{
+            width: 100%;
+            position: relative;
+            .mo{
+                display: none;
+            }
+            // img
+            a{
                 display: flex;
-                justify-content: space-between;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            // baner text
+            .baner-text{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 60%;
+                margin: 0 auto;
+                display: flex;
                 align-items: center;
-                width: 70%;
-                p{
-                    font-size: $fs-p;
-                    font-weight: bold;
-                    color: white;
-                    text-align: center;
-                    small{
-                        font-size: 0.8vw;
+                .baner-text-con{
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        font-size: $fs-p;
+                        font-weight: bold;
+                        color: $red;
                     }
-                    &:first-child{
-                        padding-top: 5%;
-                        position: relative;
-                        &::after{
-                            content: "";
-                            width: 4vw;
-                            height: 0.2vw;
-                            background-color: $red;
-                            bottom: -10%;
-                            right: 0;
-                            left: 0;
-                            position: absolute;
-                            margin: 0 auto;
-                            border-radius: 10px;
+                    h1{
+                        font-size: 2.5vw;
+                        margin: 5% 0;
+                        line-height: 1;
+                    }
+                    button{
+                        width: 80%;
+                        font-size: $fs-1;
+                        color: white;
+                        background-color: $red;
+                        border: none;
+                        outline: none;
+                        padding: 3% 3%;
+                        border-radius:20px ;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition: 0.7s;
+                        &:hover{
+                            transition: 0.7s;
+                            background-color: darkred;
                         }
                     }
-                    &:last-child{
+                }
+            }
+        }
+        // ===================================== What new ==================
+        .what-new{
+            width: 100%;
+            position: relative;
+            padding-bottom: 4%;
+            // video
+            a{
+                display: flex;
+                video{
+                    width: 100%;
+                    height: 100%;
+                }
+    
+            }
+            .what-new-con{
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                width: 60%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                // _____________________ Top________________
+                .top{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 70%;
+                    p{
+                        font-size: $fs-p;
+                        font-weight: bold;
+                        color: white;
+                        text-align: center;
+                        small{
+                            font-size: 0.8vw;
+                        }
+                        &:first-child{
+                            padding-top: 5%;
+                            position: relative;
+                            &::after{
+                                content: "";
+                                width: 4vw;
+                                height: 0.2vw;
+                                background-color: $red;
+                                bottom: -10%;
+                                right: 0;
+                                left: 0;
+                                position: absolute;
+                                margin: 0 auto;
+                                border-radius: 10px;
+                            }
+                        }
+                        &:last-child{
+                            position: relative;
+                            &::after{
+                                content: "";
+                                width: 3vw;
+                                height: 0.2vw;
+                                background-color: green;
+                                bottom: -15%;
+                                right: 0;
+                                left: 0;
+                                position: absolute;
+                                margin: 0 auto;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                    h2{
+                        font-size: $fs-h1;
+                        color: white;
+                        text-align: center;
                         position: relative;
+                        small{
+                            font-size: 0.8vw;
+                        }
                         &::after{
                             content: "";
-                            width: 3vw;
-                            height: 0.2vw;
-                            background-color: green;
+                            width: 6vw;
+                            height: 0.3vw;
+                            background-color: rgb(255, 27, 27);
                             bottom: -15%;
                             right: 0;
                             left: 0;
@@ -131,122 +155,155 @@ main{
                         }
                     }
                 }
-                h2{
-                    font-size: $fs-h1;
-                    color: white;
-                    text-align: center;
-                    position: relative;
-                    small{
-                        font-size: 0.8vw;
-                    }
-                    &::after{
-                        content: "";
-                        width: 6vw;
-                        height: 0.3vw;
-                        background-color: rgb(255, 27, 27);
-                        bottom: -15%;
-                        right: 0;
-                        left: 0;
-                        position: absolute;
-                        margin: 0 auto;
-                        border-radius: 10px;
+                // ____________________ Mid _________________
+                .mid{
+                    width: 70%;
+                    p{
+                        font-size: $fs-p;
+                        color: white;
+                        text-align: center;
+                        font-weight: bold;
                     }
                 }
-            }
-            // ____________________ Mid _________________
-            .mid{
-                width: 70%;
-                p{
-                    font-size: $fs-p;
-                    color: white;
-                    text-align: center;
-                    font-weight: bold;
+                // ______________________ Bottom __________________
+                .btm{
+                    width: 100%;
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                    padding-bottom: 1%;
+                    .btm-con{
+                        display: flex;
+                        justify-content: space-between;
+                        // align-items: center;
+                        white-space: nowrap;
+                        width: 240%;
+                        span{
+                             width: 20vw;
+                            margin-right: 3%;
+                            border-radius:20px;
+                            position: relative;
+                            overflow: hidden;
+                            a{
+                                display: flex;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 20px;
+                                    filter: brightness(0.8);
+                                    transition: 0.7s;
+                                }
+                            }
+                            .text{
+                                position: absolute;
+                                bottom: -14%;
+                                left: 0;
+                                right: 0;
+                                white-space: normal;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-between;
+                                height: 40%;
+                                padding: 3% 1%;
+                                transition: 0.7s;
+                                transition-delay: 0.5s;
+                                p{
+                                    font-size: $fs-p;
+                                    font-weight: bold;
+                                    color: white;
+                                    text-align: center;
+                                }
+                                button{
+                                    background-color: $red;
+                                    color: white;
+                                    border: none;
+                                    outline: none;
+                                    padding: 4% 17%;
+                                    border-radius: 20px;
+                                    font-size: $fs-1;
+                                    opacity: 0;
+                                    transition: 1s;
+                                }
+                               
+                            }
+                            &:hover{
+                                
+    
+                                a{
+                                    img{
+                                        transform: scale(1.05);
+                                        transition: 0.7s;
+                                    }
+                                }
+                                .text{
+                                transition: 0.7s;
+                                bottom: 0;    
+                                transition-delay: 0.7s;
+                                button{
+                                    opacity: 1;
+                                    transition: 1s;
+                                }                          
+                                }
+                            }
+                        }
+                        
+                    }
+                    &::-webkit-scrollbar{
+                        background-color: transparent;
+                        height: 0.6vw;
+                    }
+                    &::-webkit-scrollbar-thumb{
+                        background-color: rgba(128, 128, 128, 0.329);
+                        border-radius: 20px;
+                    }
+                    
                 }
             }
-            // ______________________ Bottom __________________
-            .btm{
-                width: 100%;
-                overflow-x: scroll;
-                overflow-y: hidden;
-                padding-bottom: 1%;
-                .btm-con{
+        }
+        // ==================== Products =================
+        .products{
+            margin: 3% 0 0 0;
+             padding-bottom: 4%;
+            position: relative;
+            z-index: 3;
+            .products-con{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                padding:0 1%;
+                // slides
+                .slides{
+                    width: 80%;
+                    overflow-X: scroll;
+                    overflow-Y: hidden;
+                    white-space: nowrap;
                     display: flex;
                     justify-content: space-between;
-                    // align-items: center;
-                    white-space: nowrap;
-                    width: 240%;
-                    span{
-                         width: 20vw;
-                        margin-right: 3%;
-                        border-radius:20px;
-                        position: relative;
-                        overflow: hidden;
+                    padding-bottom: 1%;
+                   .slides-con{
+                       width: 150%;
+                       display: flex;
+                       justify-content: space-between;
+                    div{
+                        width: 20vw;
+                        margin-right: 4%;
+                        border-radius: 10px;
                         a{
                             display: flex;
                             img{
                                 width: 100%;
                                 height: 100%;
-                                border-radius: 20px;
-                                filter: brightness(0.8);
-                                transition: 0.7s;
+                                border-radius: 10px;
                             }
                         }
-                        .text{
-                            position: absolute;
-                            bottom: -14%;
-                            left: 0;
-                            right: 0;
-                            white-space: normal;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: space-between;
-                            height: 40%;
-                            padding: 3% 1%;
-                            transition: 0.7s;
-                            transition-delay: 0.5s;
-                            p{
-                                font-size: $fs-p;
-                                font-weight: bold;
-                                color: white;
-                                text-align: center;
-                            }
-                            button{
-                                background-color: $red;
-                                color: white;
-                                border: none;
-                                outline: none;
-                                padding: 4% 17%;
-                                border-radius: 20px;
-                                font-size: $fs-1;
-                                opacity: 0;
-                                transition: 1s;
-                            }
-                           
-                        }
-                        &:hover{
-                            
-
-                            a{
-                                img{
-                                    transform: scale(1.05);
-                                    transition: 0.7s;
-                                }
-                            }
-                            .text{
-                            transition: 0.7s;
-                            bottom: 0;    
-                            transition-delay: 0.7s;
-                            button{
-                                opacity: 1;
-                                transition: 1s;
-                            }                          
-                            }
+                        h2{
+                            color: white;
+                            font-size: $fs-p;
+                            text-align: center;
                         }
                     }
-                    
-                }
-                &::-webkit-scrollbar{
+                   }
+                   &::-webkit-scrollbar{
                     background-color: transparent;
                     height: 0.6vw;
                 }
@@ -254,177 +311,163 @@ main{
                     background-color: rgba(128, 128, 128, 0.329);
                     border-radius: 20px;
                 }
-                
-            }
-        }
-    }
-    // ==================== Products =================
-    .products{
-        margin: 3% 0 0 0;
-         padding-bottom: 4%;
-        position: relative;
-        z-index: 3;
-        .products-con{
-            width: 80%;
-            display: flex;
-            justify-content: space-between;
-            padding:0 1%;
-            // slides
-            .slides{
-                width: 80%;
-                overflow-X: scroll;
-                overflow-Y: hidden;
-                white-space: nowrap;
-                display: flex;
-                justify-content: space-between;
-                padding-bottom: 1%;
-               .slides-con{
-                   width: 150%;
-                   display: flex;
-                   justify-content: space-between;
-                div{
-                    width: 20vw;
-                    margin-right: 4%;
-                    border-radius: 10px;
-                    a{
-                        display: flex;
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            border-radius: 10px;
+                }
+                // products-Text
+                .products-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 0 3%;
+                    div{
+                        p{
+                            font-size: $fs-p;
+                        }
+                        h1{
+                            font-size: $fs-h1;
                         }
                     }
-                    h2{
-                        color: white;
-                        font-size: $fs-p;
-                        text-align: center;
-                    }
-                }
-               }
-               &::-webkit-scrollbar{
-                background-color: transparent;
-                height: 0.6vw;
-            }
-            &::-webkit-scrollbar-thumb{
-                background-color: rgba(128, 128, 128, 0.329);
-                border-radius: 20px;
-            }
-            }
-            // products-Text
-            .products-text{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                padding: 0 3%;
-                div{
-                    p{
-                        font-size: $fs-p;
-                    }
-                    h1{
-                        font-size: $fs-h1;
-                    }
-                }
-              span{
-                  width: 45%;
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  i{
-                      color: $red;
-                      background-color: white;
-                      padding: 13% 18%;
-                      border-radius: 50%;
-                      font-size: $fs-p;
-                      cursor: pointer;
-                      transition: 0.7s;
-                      &:hover{
-                        transition: 0.7s;
-                        background-color: darkred;
-                        color: white;
-                    }
+                  span{
+                      width: 45%;
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      i{
+                          color: $red;
+                          background-color: white;
+                          padding: 13% 18%;
+                          border-radius: 50%;
+                          font-size: $fs-p;
+                          cursor: pointer;
+                          transition: 0.7s;
+                          &:hover{
+                            transition: 0.7s;
+                            background-color: darkred;
+                            color: white;
+                        }
+                      }
                   }
-              }
-                
+                    
+                }
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                background-color: $red;
+                width: 100%;
+                padding: 5% 0;
+                z-index: -2;
+                bottom: 0;
             }
         }
-        &::after{
-            content: "";
-            position: absolute;
-            background-color: $red;
-            width: 100%;
-            padding: 5% 0;
-            z-index: -2;
-            bottom: 0;
-        }
-    }
-    // ====================== Social ==========
-    .social{
-        padding: 1% 0;
-        width: 35%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        h2{
-            font-size: calc($fs-p + 0.3vw);
-            color: $red;
-        }
-        .social-icons{
-            width: 40%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            i{
-                font-size:calc($fs-p + 0.3vw);
-                cursor: pointer;
-                
-            }
-            .fa-facebook{
-                color: rgb(0, 89, 255);
-            }
-            .fa-twitter{
-                color: rgb(0, 89, 255);
-            }
-            .fa-envelope{
-                color: gray;
-            }
-            .fa-whatsapp{
-                color: green;
-            }
-            .fa-pinterest{
-                color: $red;
-            }
-        }
-    }
-    // ================ Newsletter ================
-    .newsLetter{
-        background-color: $red;
-        padding: 1% 0;
-        .newLetterCon{
+        // ====================== Social ==========
+        .social{
+            padding: 1% 0;
             width: 35%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            p{
-                font-size: $fs-p;
-                color: white;
+            h2{
+                font-size: calc($fs-p + 0.3vw);
+                color: $red;
             }
-            button{
-                width: 45%;
-                color: white;
-                border: none;
-                outline: none;
-                background-color: rgb(218, 117, 117);
+            .social-icons{
+                width: 40%;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
-                padding: 3% 0;
-                font-size: $fs-1;
-                border-radius: 20px;
+                i{
+                    font-size:calc($fs-p + 0.3vw);
+                    cursor: pointer;
+                    
+                }
+                .fa-facebook{
+                    color: rgb(0, 89, 255);
+                }
+                .fa-twitter{
+                    color: rgb(0, 89, 255);
+                }
+                .fa-envelope{
+                    color: gray;
+                }
+                .fa-whatsapp{
+                    color: green;
+                }
+                .fa-pinterest{
+                    color: $red;
+                }
+            }
+        }
+        // ================ Newsletter ================
+        .newsLetter{
+            background-color: $red;
+            padding: 1% 0;
+            .newLetterCon{
+                width: 35%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    font-size: $fs-p;
+                    color: white;
+                }
+                button{
+                    width: 45%;
+                    color: white;
+                    border: none;
+                    outline: none;
+                    background-color: rgb(218, 117, 117);
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 3% 0;
+                    font-size: $fs-1;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    
+    }
+    // ======================================== POP Button ==================
+    .pop{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 6;
+        width: 19%;
+        padding: 2%;
+        .pop-btn{
+           width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: $fs-p;
+            padding: 4% 0;
+            position: relative;
+            border-radius:20px ;
+            border: none;
+            outline: none;
+            background-color: white;
+            box-shadow: 1px 1px 10px black;
+            .fa-circle-xmark{
+                position: absolute;
+                left: -5%;
+                font-size: calc($fs-p + 0.3vw);
                 cursor: pointer;
+            }
+            .fa-cart-shopping{
+                color: $red;
+            }
+            p{
+                color: $red;
+                border: 1px red solid;
+                padding: 2% 7%;
+                border-radius:20px ;
+                font-weight: bold;
             }
         }
     }
-
+    
 }

@@ -1,220 +1,236 @@
 @media only screen and (max-width: 800px) {
-  header {
-    padding-top: 2%;
-    nav {
-      width: 100%;
-      .logo {
-        width: 35%;
-      }
-      ul {
-        display: none;
-      }
-      .fa-bars-staggered {
-        display: block;
-        font-size: 7vw;
-        color: white;
-      }
-    }
-  }
-  // ================= main ================
-  main {
-    // ===================== baner =================
-    .baner {
-      .des {
-        display: none;
-      }
-      .mo {
-        display: block;
-      }
-      .baner-text {
-        width: 100%;
-        height: 45%;
-        justify-content: center;
-        align-items: flex-end;
-        .baner-text-con {
-          width: 80%;
-          align-items: center;
-          text-align: center;
-          p {
-            font-size: $fs-p-mo;
-          }
-          h1 {
-            font-size: $fs-h1-mo;
-          }
-          button {
-            font-size: $fs-p-mo;
-          }
-        }
-      }
-    }
-    // ======================= whats new ================
-    .what-new {
-      // padding-bottom: 35%;
-      .video-anchor {
-        display: none;
-      }
-      .what-new-con {
-        width: 100%;
-        position: static;
-        // ========= top
-        .top {
+  body{
+
+    header {
+        padding-top: 2%;
+        nav {
           width: 100%;
-          background-color: $red;
-          padding: 5% 2%;
-          p {
-            font-size: $fs-p-mo;
-            small {
-              font-size: calc($fs-h1 + 0.4vw);
-            }
-            &:first-child {
-              &::after {
-                bottom: -6%;
-                width: 10vw;
-                height: 0.4vw;
-                background-color: white;
-              }
-            }
-            &:last-child {
-              color: white;
-              &::after {
-                bottom: -6%;
-                width: 8vw;
-                height: 0.4vw;
-                background-color: white;
-              }
-            }
+          .logo {
+            width: 35%;
           }
-          h2 {
-            font-size: $fs-h1-mo;
-            small {
-              font-size: calc($fs-h1 + 1vw);
-            }
-            &::after {
-              width: 20vw;
-              height: 0.4vw;
-              background-color: white;
-            }
+          ul {
+            display: none;
+          }
+          .fa-bars-staggered {
+            display: block;
+            font-size: 7vw;
+            color: white;
           }
         }
-        // ================== MID =================
-        .mid {
-          width: 100%;
-          margin: 1% 0;
-          p {
-            font-size: $fs-p-mo;
+      }
+      // ================= main ================
+      main {
+        // ===================== baner =================
+        .baner {
+          .des {
+            display: none;
           }
-        }
-        // =============== bottom =============
-        .btm {
-          overflow-x: hidden;
-          overflow-y: scroll;
-          .btm-con {
-            white-space: normal;
+          .mo {
+            display: block;
+          }
+          .baner-text {
             width: 100%;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            span {
-              margin-bottom: 3%;
-              width: 40%;
-              .text {
-                height: 45%;
-                p {
-                  font-size: $fs-p-mo;
-                }
-                button {
-                  font-size: $fs-1-mo;
-                }
+            height: 45%;
+            justify-content: center;
+            align-items: flex-end;
+            .baner-text-con {
+              width: 80%;
+              align-items: center;
+              text-align: center;
+              p {
+                font-size: $fs-p-mo;
               }
-            }
-          }
-        }
-      }
-    }
-    // ====================== products ===============
-    .products {
-      .products-con {
-        width: 100%;
-        padding: 0 3%;
-        .slides {
-          width: 60%;
-          .slides-con {
-            white-space: nowrap;
-            width: 450%;
-            div {
-              width: 70vw;
-              h2 {
+              h1 {
+                font-size: $fs-h1-mo;
+              }
+              button {
                 font-size: $fs-p-mo;
               }
             }
           }
         }
-        .products-text {
-          div {
-            p {
-              font-size: $fs-p-mo;
+        // ======================= whats new ================
+        .what-new {
+          // padding-bottom: 35%;
+          .video-anchor {
+            display: none;
+          }
+          .what-new-con {
+            width: 100%;
+            position: static;
+            // ========= top
+            .top {
+              width: 100%;
+              background-color: $red;
+              padding: 5% 2%;
+              p {
+                font-size: $fs-p-mo;
+                small {
+                  font-size: calc($fs-h1 + 0.4vw);
+                }
+                &:first-child {
+                  &::after {
+                    bottom: -6%;
+                    width: 10vw;
+                    height: 0.4vw;
+                    background-color: white;
+                  }
+                }
+                &:last-child {
+                  color: white;
+                  &::after {
+                    bottom: -6%;
+                    width: 8vw;
+                    height: 0.4vw;
+                    background-color: white;
+                  }
+                }
+              }
+              h2 {
+                font-size: $fs-h1-mo;
+                small {
+                  font-size: calc($fs-h1 + 1vw);
+                }
+                &::after {
+                  width: 20vw;
+                  height: 0.4vw;
+                  background-color: white;
+                }
+              }
             }
-            h1 {
-              font-size: $fs-h1-mo;
+            // ================== MID =================
+            .mid {
+              width: 100%;
+              margin: 1% 0;
+              p {
+                font-size: $fs-p-mo;
+              }
+            }
+            // =============== bottom =============
+            .btm {
+              overflow-x: hidden;
+              overflow-y: scroll;
+              .btm-con {
+                white-space: normal;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                span {
+                  margin-bottom: 3%;
+                  width: 40%;
+                  .text {
+                    height: 45%;
+                    p {
+                      font-size: $fs-p-mo;
+                    }
+                    button {
+                      font-size: $fs-1-mo;
+                    }
+                  }
+                }
+              }
             }
           }
-          span {
+        }
+        // ====================== products ===============
+        .products {
+          .products-con {
+            width: 100%;
+            padding: 0 3%;
+            .slides {
+              width: 60%;
+              .slides-con {
+                white-space: nowrap;
+                width: 450%;
+                div {
+                  width: 70vw;
+                  h2 {
+                    font-size: $fs-p-mo;
+                  }
+                }
+              }
+            }
+            .products-text {
+              div {
+                p {
+                  font-size: $fs-p-mo;
+                }
+                h1 {
+                  font-size: $fs-h1-mo;
+                }
+              }
+              span {
+                width: 50%;
+                i {
+                  font-size: $fs-p-mo;
+                }
+              }
+            }
+          }
+          &::after {
+            padding: 10% 0;
+          }
+        }
+        // ================ Social media ==============
+        .social {
+          width: 100%;
+          padding: 4% 2%;
+          h2 {
+            font-size: $fs-p-mo;
+          }
+          .social-icons {
             width: 50%;
             i {
               font-size: $fs-p-mo;
             }
           }
         }
-      }
-      &::after {
-        padding: 10% 0;
-      }
-    }
-    // ================ Social media ==============
-    .social {
-      width: 100%;
-      padding: 4% 2%;
-      h2 {
-        font-size: $fs-p-mo;
-      }
-      .social-icons {
-        width: 50%;
-        i {
-          font-size: $fs-p-mo;
+        // ============== newsLetter =============
+        .newsLetter {
+          padding: 4% 2%;
+          .newLetterCon {
+            width: 100%;
+            p {
+              font-size: $fs-p-mo;
+            }
+            button {
+              font-size: $fs-1-mo;
+            }
+          }
         }
       }
-    }
-    // ============== newsLetter =============
-    .newsLetter {
-      padding: 4% 2%;
-      .newLetterCon {
-        width: 100%;
-        p {
-          font-size: $fs-p-mo;
-        }
-        button {
-          font-size: $fs-1-mo;
-        }
-      }
-    }
-  }
-  //   ===================== FOOTER ==================
-  footer{
-      padding: 2%;
-      .footer-con{
-          width: 100%;
-          flex-wrap: wrap;
-          ul{
-              width: 49%;
-              margin-bottom: 3%;
-              p{
-                  font-size: $fs-1-mo;
-              }
-              li{
-                a{
-                    font-size: calc($fs-1-mo - 0.3vw);
-                }
+      //   ===================== FOOTER ==================
+      footer{
+          padding: 2%;
+          .footer-con{
+              width: 100%;
+              flex-wrap: wrap;
+              ul{
+                  width: 49%;
+                  margin-bottom: 3%;
+                  p{
+                      font-size: $fs-1-mo;
+                  }
+                  li{
+                    a{
+                        font-size: calc($fs-1-mo - 0.3vw);
+                    }
+                  }
               }
           }
       }
+      .pop{
+          width: 40%;
+          padding: 4%;
+          .pop-btn{
+              font-size: $fs-1-mo;
+              padding: 4% 6%;
+              .fa-circle-xmark{
+                  font-size: $fs-p-mo;
+                  left: -6%;
+              }
+          }
+      }
+      
   }
 }
