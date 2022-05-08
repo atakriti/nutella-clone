@@ -1,0 +1,1009 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Rubik:ital@1&display=swap");
+header {
+  background-color: transparent;
+  padding-top: 1.5%;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+}
+header nav {
+  background-color: rgb(228, 10, 10);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0.5% 3%;
+  border-radius: 50px;
+}
+header nav .logo {
+  width: 18%;
+}
+header nav .logo a {
+  display: flex;
+}
+header nav .logo a img {
+  width: 100%;
+  height: 100%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+header nav ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 3%;
+  border-radius: 20px;
+  transition: 0.7s;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1vw;
+}
+header nav ul li:hover {
+  transition: 0.7s;
+  background-color: darkred;
+}
+header nav .fa-bars-staggered {
+  display: none;
+}
+
+body main #drop {
+  display: none;
+}
+body main .baner {
+  width: 100%;
+  position: relative;
+}
+body main .baner .mo {
+  display: none;
+}
+body main .baner a {
+  display: flex;
+}
+body main .baner a img {
+  width: 100%;
+  height: 100%;
+}
+body main .baner .baner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+body main .baner .baner-text .baner-text-con {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+body main .baner .baner-text .baner-text-con p {
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: rgb(228, 10, 10);
+}
+body main .baner .baner-text .baner-text-con h1 {
+  font-size: 2.5vw;
+  margin: 5% 0;
+  line-height: 1;
+}
+body main .baner .baner-text .baner-text-con button {
+  width: 80%;
+  font-size: 1vw;
+  color: white;
+  background-color: rgb(228, 10, 10);
+  border: none;
+  outline: none;
+  padding: 3% 3%;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.7s;
+}
+body main .baner .baner-text .baner-text-con button:hover {
+  transition: 0.7s;
+  background-color: darkred;
+}
+body main .what-new {
+  width: 100%;
+  position: relative;
+  padding-bottom: 4%;
+}
+body main .what-new a {
+  display: flex;
+}
+body main .what-new a video {
+  width: 100%;
+  height: 100%;
+}
+body main .what-new .what-new-con {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .what-new .what-new-con .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+body main .what-new .what-new-con .top p {
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+body main .what-new .what-new-con .top p small {
+  font-size: 0.8vw;
+}
+body main .what-new .what-new-con .top p:first-child {
+  padding-top: 5%;
+  position: relative;
+}
+body main .what-new .what-new-con .top p:first-child::after {
+  content: "";
+  width: 4vw;
+  height: 0.2vw;
+  background-color: rgb(228, 10, 10);
+  bottom: -10%;
+  right: 0;
+  left: 0;
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+body main .what-new .what-new-con .top p:last-child {
+  position: relative;
+}
+body main .what-new .what-new-con .top p:last-child::after {
+  content: "";
+  width: 3vw;
+  height: 0.2vw;
+  background-color: green;
+  bottom: -15%;
+  right: 0;
+  left: 0;
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+body main .what-new .what-new-con .top h2 {
+  font-size: 2vw;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+body main .what-new .what-new-con .top h2 small {
+  font-size: 0.8vw;
+}
+body main .what-new .what-new-con .top h2::after {
+  content: "";
+  width: 6vw;
+  height: 0.3vw;
+  background-color: rgb(255, 27, 27);
+  bottom: -15%;
+  right: 0;
+  left: 0;
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+body main .what-new .what-new-con .mid {
+  width: 70%;
+}
+body main .what-new .what-new-con .mid p {
+  font-size: 1.2vw;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+body main .what-new .what-new-con .btm {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 1%;
+}
+body main .what-new .what-new-con .btm .btm-con {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  width: 240%;
+}
+body main .what-new .what-new-con .btm .btm-con span {
+  width: 20vw;
+  margin-right: 3%;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+body main .what-new .what-new-con .btm .btm-con span a {
+  display: flex;
+}
+body main .what-new .what-new-con .btm .btm-con span a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  filter: brightness(0.8);
+  transition: 0.7s;
+}
+body main .what-new .what-new-con .btm .btm-con span .text {
+  position: absolute;
+  bottom: -14%;
+  left: 0;
+  right: 0;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 40%;
+  padding: 3% 1%;
+  transition: 0.7s;
+  transition-delay: 0.5s;
+}
+body main .what-new .what-new-con .btm .btm-con span .text p {
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+body main .what-new .what-new-con .btm .btm-con span .text button {
+  background-color: rgb(228, 10, 10);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 4% 17%;
+  border-radius: 20px;
+  font-size: 1vw;
+  opacity: 0;
+  transition: 1s;
+}
+body main .what-new .what-new-con .btm .btm-con span:hover a img {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+body main .what-new .what-new-con .btm .btm-con span:hover .text {
+  transition: 0.7s;
+  bottom: 0;
+  transition-delay: 0.7s;
+}
+body main .what-new .what-new-con .btm .btm-con span:hover .text button {
+  opacity: 1;
+  transition: 1s;
+}
+body main .what-new .what-new-con .btm::-webkit-scrollbar {
+  background-color: transparent;
+  height: 0.6vw;
+}
+body main .what-new .what-new-con .btm::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.329);
+  border-radius: 20px;
+}
+body main .products {
+  margin: 3% 0 0 0;
+  padding-bottom: 4%;
+  position: relative;
+  z-index: 3;
+}
+body main .products .products-con {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1%;
+}
+body main .products .products-con .slides {
+  width: 80%;
+  overflow-X: scroll;
+  overflow-Y: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1%;
+}
+body main .products .products-con .slides .slides-con {
+  width: 150%;
+  display: flex;
+  justify-content: space-between;
+}
+body main .products .products-con .slides .slides-con div {
+  width: 20vw;
+  margin-right: 4%;
+  border-radius: 10px;
+}
+body main .products .products-con .slides .slides-con div a {
+  display: flex;
+}
+body main .products .products-con .slides .slides-con div a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+body main .products .products-con .slides .slides-con div h2 {
+  color: white;
+  font-size: 1.2vw;
+  text-align: center;
+}
+body main .products .products-con .slides::-webkit-scrollbar {
+  background-color: transparent;
+  height: 0.6vw;
+}
+body main .products .products-con .slides::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.329);
+  border-radius: 20px;
+}
+body main .products .products-con .products-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+body main .products .products-con .products-text div p {
+  font-size: 1.2vw;
+}
+body main .products .products-con .products-text div h1 {
+  font-size: 2vw;
+}
+body main .products .products-con .products-text span {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .products .products-con .products-text span i {
+  color: rgb(228, 10, 10);
+  background-color: white;
+  padding: 13% 18%;
+  border-radius: 50%;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: 0.7s;
+}
+body main .products .products-con .products-text span i:hover {
+  transition: 0.7s;
+  background-color: darkred;
+  color: white;
+}
+body main .products::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(228, 10, 10);
+  width: 100%;
+  padding: 5% 0;
+  z-index: -2;
+  bottom: 0;
+}
+body main .social {
+  padding: 1% 0;
+  width: 35%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .social h2 {
+  font-size: 1.5vw;
+  color: rgb(228, 10, 10);
+}
+body main .social .social-icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .social .social-icons i {
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+body main .social .social-icons .fa-facebook {
+  color: rgb(0, 89, 255);
+}
+body main .social .social-icons .fa-twitter {
+  color: rgb(0, 89, 255);
+}
+body main .social .social-icons .fa-envelope {
+  color: gray;
+}
+body main .social .social-icons .fa-whatsapp {
+  color: green;
+}
+body main .social .social-icons .fa-pinterest {
+  color: rgb(228, 10, 10);
+}
+body main .newsLetter {
+  background-color: rgb(228, 10, 10);
+  padding: 1% 0;
+}
+body main .newsLetter .newLetterCon {
+  width: 35%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .newsLetter .newLetterCon p {
+  font-size: 1.2vw;
+  color: white;
+}
+body main .newsLetter .newLetterCon button {
+  width: 45%;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: rgb(218, 117, 117);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3% 0;
+  font-size: 1vw;
+  border-radius: 20px;
+  cursor: pointer;
+}
+body .pop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 6;
+  width: 19%;
+  padding: 2%;
+}
+body .pop .pop-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2vw;
+  padding: 4% 0;
+  position: relative;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: white;
+  box-shadow: 1px 1px 10px black;
+}
+body .pop .pop-btn .fa-circle-xmark {
+  position: absolute;
+  left: -5%;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+body .pop .pop-btn .fa-cart-shopping {
+  color: rgb(228, 10, 10);
+}
+body .pop .pop-btn p {
+  color: rgb(228, 10, 10);
+  border: 1px red solid;
+  padding: 2% 7%;
+  border-radius: 20px;
+  font-weight: bold;
+}
+@keyframes popA {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0.5;
+  }
+}
+
+footer {
+  background: red;
+  padding: 2% 0;
+}
+footer .footer-con {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-con ul {
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+  width: 19%;
+}
+footer .footer-con ul p {
+  font-size: 1vw;
+  color: white;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+footer .footer-con ul li {
+  list-style: none;
+  display: flex;
+}
+footer .footer-con ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7vw;
+}
+
+@media only screen and (max-width: 800px) {
+  body header {
+    padding-top: 2%;
+  }
+  body header nav {
+    width: 100%;
+    padding: 1% 3%;
+  }
+  body header nav .logo {
+    width: 35%;
+  }
+  body header nav ul {
+    display: none;
+  }
+  body header nav .fa-bars-staggered {
+    display: block;
+    font-size: 7vw;
+    color: white;
+  }
+  body main {
+    position: relative;
+  }
+  body main .baner .des {
+    display: none;
+  }
+  body main .baner .mo {
+    display: block;
+  }
+  body main .baner .baner-text {
+    width: 100%;
+    height: 45%;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  body main .baner .baner-text .baner-text-con {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+  }
+  body main .baner .baner-text .baner-text-con p {
+    font-size: 4vw;
+  }
+  body main .baner .baner-text .baner-text-con h1 {
+    font-size: 6vw;
+  }
+  body main .baner .baner-text .baner-text-con button {
+    font-size: 4vw;
+  }
+  body main .what-new .video-anchor {
+    display: none;
+  }
+  body main .what-new .what-new-con {
+    width: 100%;
+    position: static;
+  }
+  body main .what-new .what-new-con .top {
+    width: 100%;
+    background-color: rgb(228, 10, 10);
+    padding: 5% 2%;
+  }
+  body main .what-new .what-new-con .top p {
+    font-size: 4vw;
+  }
+  body main .what-new .what-new-con .top p small {
+    font-size: 2.4vw;
+  }
+  body main .what-new .what-new-con .top p:first-child::after {
+    bottom: -6%;
+    width: 10vw;
+    height: 0.4vw;
+    background-color: white;
+  }
+  body main .what-new .what-new-con .top p:last-child {
+    color: white;
+  }
+  body main .what-new .what-new-con .top p:last-child::after {
+    bottom: -6%;
+    width: 8vw;
+    height: 0.4vw;
+    background-color: white;
+  }
+  body main .what-new .what-new-con .top h2 {
+    font-size: 6vw;
+  }
+  body main .what-new .what-new-con .top h2 small {
+    font-size: 3vw;
+  }
+  body main .what-new .what-new-con .top h2::after {
+    width: 20vw;
+    height: 0.4vw;
+    background-color: white;
+  }
+  body main .what-new .what-new-con .mid {
+    width: 100%;
+    margin: 1% 0;
+  }
+  body main .what-new .what-new-con .mid p {
+    font-size: 4vw;
+  }
+  body main .what-new .what-new-con .btm {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  body main .what-new .what-new-con .btm .btm-con {
+    white-space: normal;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  body main .what-new .what-new-con .btm .btm-con span {
+    margin-bottom: 3%;
+    width: 40%;
+  }
+  body main .what-new .what-new-con .btm .btm-con span .text {
+    height: 45%;
+  }
+  body main .what-new .what-new-con .btm .btm-con span .text p {
+    font-size: 4vw;
+  }
+  body main .what-new .what-new-con .btm .btm-con span .text button {
+    font-size: 2.5vw;
+  }
+  body main .products .products-con {
+    width: 100%;
+    padding: 0 3%;
+  }
+  body main .products .products-con .slides {
+    width: 60%;
+  }
+  body main .products .products-con .slides .slides-con {
+    white-space: nowrap;
+    width: 450%;
+  }
+  body main .products .products-con .slides .slides-con div {
+    width: 70vw;
+  }
+  body main .products .products-con .slides .slides-con div h2 {
+    font-size: 4vw;
+  }
+  body main .products .products-con .products-text div p {
+    font-size: 4vw;
+  }
+  body main .products .products-con .products-text div h1 {
+    font-size: 6vw;
+  }
+  body main .products .products-con .products-text span {
+    width: 50%;
+  }
+  body main .products .products-con .products-text span i {
+    font-size: 4vw;
+  }
+  body main .products::after {
+    padding: 10% 0;
+  }
+  body main .social {
+    width: 100%;
+    padding: 4% 2%;
+  }
+  body main .social h2 {
+    font-size: 4vw;
+  }
+  body main .social .social-icons {
+    width: 50%;
+  }
+  body main .social .social-icons i {
+    font-size: 4vw;
+  }
+  body main .newsLetter {
+    padding: 4% 2%;
+  }
+  body main .newsLetter .newLetterCon {
+    width: 100%;
+  }
+  body main .newsLetter .newLetterCon p {
+    font-size: 4vw;
+  }
+  body main .newsLetter .newLetterCon button {
+    font-size: 2.5vw;
+  }
+  body main #drop {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+    width: 100%;
+    background-color: rgb(228, 10, 10);
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  body main #drop .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5% 3%;
+  }
+  body main #drop .top-section .logo {
+    width: 35%;
+  }
+  body main #drop .top-section .logo a {
+    display: flex;
+  }
+  body main #drop .top-section .logo a img {
+    width: 100%;
+    height: 100%;
+  }
+  body main #drop .top-section .fa-xmark {
+    font-size: 7vw;
+    color: white;
+  }
+  body main #drop .drop-container {
+    background-color: rgb(228, 10, 10);
+    padding: 0%;
+  }
+  body main #drop .drop-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main #drop .drop-container ul li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+    padding: 3% 0;
+  }
+  body main #drop .drop-container ul li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 6vw;
+    width: 100%;
+  }
+  body main #drop .drop-container ul li i {
+    color: white;
+    font-size: 6vw;
+  }
+  body main #drop .drop-container ul li .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  body main #drop .drop-container ul li #info2 {
+    animation: drop1 2s;
+  }
+  @keyframes drop1 {
+    from {
+      height: 10vw;
+    }
+    to {
+      height: 36vw;
+    }
+  }
+  body main #drop .drop-container ul li .info {
+    background-color: white;
+    width: 100%;
+    padding: 2%;
+    animation: listDown 2s;
+    overflow: hidden;
+  }
+  @keyframes listDown {
+    from {
+      height: 10vw;
+    }
+    to {
+      height: 100vw;
+    }
+  }
+  body main #drop .drop-container ul li .info .info-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+  }
+  body main #drop .drop-container ul li .info .info-container .pic1 {
+    background-image: url(../images/drop/1.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic2 {
+    background-image: url(../images/drop/2.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic3 {
+    background-image: url(../images/drop/3.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4 {
+    background-image: url(../images/drop/4.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic5 {
+    background-image: url(../images/drop/5.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic6 {
+    background-image: url(../images/drop/6.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic2-1 {
+    background-image: url(../images/drop/2.1.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic2-2 {
+    background-image: url(../images/drop/2.2.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic3-1 {
+    background-image: url(../images/drop/3.1.jpg);
+  }
+  body main #drop .drop-container ul li .info .info-container .redBox {
+    background-color: rgb(228, 10, 10);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic3-2 {
+    background-image: url(../images/drop/3.2.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic3-3 {
+    background-image: url(../images/drop/3.3.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic3-4 {
+    background-image: url(../images/drop/3.4.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic3-5 {
+    background-image: url(../images/drop/3.5.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-1 {
+    background-image: url(../images/drop/4.1.png);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-1 p {
+    color: brown;
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-2 {
+    background-image: url(../images/drop/4.2.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-2 p {
+    color: brown;
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-3 {
+    background-image: url(../images/drop/4.3.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-3 p {
+    color: brown;
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-4 {
+    background-image: url(../images/drop/4.4.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-4 p {
+    color: brown;
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-5 {
+    background-image: url(../images/drop/4.5.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-5 p {
+    color: brown;
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-6 {
+    background-image: url(../images/drop/4.6.webp);
+  }
+  body main #drop .drop-container ul li .info .info-container .pic4-6 p {
+    color: brown;
+  }
+  body main #drop .drop-container ul li .info .info-container span {
+    width: 30vw;
+    position: relative;
+    margin-bottom: 3%;
+    border: 3px rgb(17, 7, 7) solid;
+    height: 30vw;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body main #drop .drop-container ul li .info .info-container span i {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 2;
+    color: red;
+    background-color: white;
+    padding: 2% 5%;
+    border-radius: 50%;
+    font-size: 4vw;
+  }
+  body main #drop .drop-container ul li .info .info-container span a {
+    display: flex;
+  }
+  body main #drop .drop-container ul li .info .info-container span a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  body main #drop .drop-container ul li .info .info-container span p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 6%;
+    font-size: 2.5vw;
+    color: white;
+    font-weight: bold;
+  }
+  body footer {
+    padding: 2%;
+  }
+  body footer .footer-con {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  body footer .footer-con ul {
+    width: 49%;
+    margin-bottom: 3%;
+  }
+  body footer .footer-con ul p {
+    font-size: 2.5vw;
+  }
+  body footer .footer-con ul li a {
+    font-size: 2.2vw;
+  }
+  body .pop {
+    width: 40%;
+    padding: 4%;
+  }
+  body .pop .pop-btn {
+    font-size: 2.5vw;
+    padding: 4% 6%;
+  }
+  body .pop .pop-btn .fa-circle-xmark {
+    font-size: 4vw;
+    left: -6%;
+  }
+
+  @keyframes dropUp {
+    from {
+      height: 100vw;
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes dropUp1 {
+    from {
+      height: 36vw;
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes menuOpen {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes menuClose {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=main.css.map */

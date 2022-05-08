@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Nutella-Clone</title>
+  </head>
+  <body>
+    <!-- ========================= pop button ================ -->
+   <div id="pop" class="pop">
+      <button  class="pop-btn"> <i onclick="iX()" class="fa-solid fa-circle-xmark"></i><i class="fa-solid fa-cart-shopping"></i> <p>Jetzt bestellen</p></button>
+   </div>
+    <!-- ============= header ============ -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#"><img src="./images/logo.webp" alt="" /></a>
+        </div>
+        <!-- ul -->
+        <ul>
+          <li><a href="#">Entdecke nutella®</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="#">Was gibt's Neues?</a></li>
+          <li><a href="#">Produkte</a></li>
+        </ul>
+        <i onclick="menuButtonOpen()" class="fa-solid fa-bars-staggered"></i>
+      </nav>
+    </header>
+    <!-- =============== main ================== -->
+    <main>
+      <!-- ================================= Drop-Menu ====================== -->
+      <div id="drop">
+        <!-- ================ top section -->
+        <div class="top-section">
+          <div class="logo">
+            <a href="#"><img src="./images/logo.webp" alt="" /></a>
+          </div>
+          <i onclick="menuButtonClose()" class="fa-solid fa-xmark"></i>
+        </div>
+        <!-- ================ Drop Container -->
+        <div class="drop-container">
+          <ul>
+            <!-- -------------------------- one------------------- -->
+            <li class="listA" onclick="btn1()" ><div class="list">
+              <a class="anchorList">Entdecke nutella®</a> <i class="fa-solid fa-angle-down angelDown"></i>
+            </div>
+              <div id="info1" class="info">
+                <div  class="info-container">
+                  <span class="pic1"><i class="fa-light fa-plus"></i>   <p>Unser Engagement für Nachhaltigkeit</p></span>
+                  <span class="pic2"><i class="fa-light fa-plus"></i>   <p> Unsere Qualität und unsere Zutaten </p></span>
+                  <span class="pic3"><i class="fa-light fa-plus"></i>   <p> Aus leer mach mehr </p></span>
+                  <span class="pic4"><i class="fa-light fa-plus"></i>   <p> Der nutella® Look</p></span>
+                  <span class="pic5"><i class="fa-light fa-plus"></i>   <p>  Unsere Geschichte</p></span>
+                  <span class="pic6"><i class="fa-light fa-plus"></i>   <p>  FAQ</p></span>                  
+                </div>
+              </div>
+            </li>
+            
+            <!-- ------------------------ two -------------------- -->
+            <li class="list2" onclick="btn2()" ><div class="list">
+              <a class="anchorList2">Inspiration</a><i class="fa-solid fa-angle-down angelDown2"></i>
+            </div>
+            <div id="info2"  class="info">
+              <div class="info-container">
+                <span class="pic2-1"><i class="fa-light fa-plus"></i>   <p>Rezepte mit nutella</p></span>
+                <span class="pic2-2"><i class="fa-light fa-plus"></i>   <p> DIY-Ideen für dein leeres nutella® Glas</p></span>
+              </div>
+            </div>
+            </li>
+            <!-- ------------------------ three ------------------------- -->
+            <li class="list3" onclick="btn3()" ><div class="list">
+              <a class="anchorList3">Was gibt’s Neues?</a><i class="fa-solid fa-angle-down angelDown3"></i>
+            </div>
+              <div id="info3"  class="info">
+                <div class="info-container">
+                  <span class="pic3-1"><i class="fa-light fa-plus"></i>  <p>Deine Lieblingsrezepte</p></span>
+                  <span class="redBox"><i class="fa-light fa-plus"></i>   <p>nutella® Küchenhelfer</p></span>
+                  <span class="pic3-2"><i class="fa-light fa-plus"></i>   <p> nutella bakings & baqueens</p></span>
+                  <span class="pic3-3"><i class="fa-light fa-plus"></i>   <p>nutella® & Brot </p></span>
+                  <span class="pic3-4"><i class="fa-light fa-plus"></i>   <p> nutella® Cafe</p></span>
+                  <span class="pic3-5"><i class="fa-light fa-plus"></i>   <p>nutella® TV-Spots</p></span>
+                </div>
+              </div>
+            </li>
+            <!-- ---------------------- four ----------------------- -->
+            <li class="list4" onclick="btn4()" ><div class="list">
+              <a class="anchorList4"> Produkte</a><i class="fa-solid fa-angle-down angelDown4"></i>
+            </div>
+              <div id="info4"  class="info">
+                <div class="info-container">
+                  <span class="pic4-1">   <p>Jetzt bestellen</p></span>
+                  <span class="pic4-2">   <p>Exklusive nutella® Produkte </p></span>
+                  <span class="pic4-3">   <p> nutella biscuits</p></span>
+                  <span class="pic4-4">   <p>nutella® </p></span>
+                  <span class="pic4-5">   <p> nutella® & Go!</p></span>
+                  <span class="pic4-6">   <p>nutella® Muffin</p></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- =============== baner ============ -->
+      <div class="baner">
+        <a class="des"><img src="./images/des-baner.webp" alt="" /></a>
+        <a class="mo"><img src="./images/mo-baner.webp" alt=""></a>
+        <div class="baner-text">
+          <div class="baner-text-con">
+            <p>NUTELLA® MUFFIN</p>
+            <h1>
+              Hast du<br />
+              unseren<br />
+              nutella® Muffin<br />
+              schon probiert?
+            </h1>
+            <button>Jetzt entdecken</button>
+          </div>
+        </div>
+      </div>
+      <!-- ================ what new =========== -->
+      <div class="what-new">
+       <a class="video-anchor">
+        <video loop muted autoplay>
+            <source src="./images/Video_Loop_News.mp4" />
+          </video>
+       </a>
+        <div class="what-new-con">
+          <!-- top -->
+          <div class="top">
+            <p>
+              <small>Lass</small> <br />
+              dich <br />
+              Inspirieren
+            </p>
+            <h2>
+              <small>Was </small> <br />
+              gibt's Neues?
+            </h2>
+            <p>
+              <small>Entdecke</small> <br />
+              nutella
+            </p>
+          </div>
+          <!-- mid -->
+          <div class="mid">
+            <p>
+              In der Welt von nutella® passiert immer ganz viel. Bereit für die
+              News von nutella®?
+            </p>
+          </div>
+          <!-- btm -->
+          <div class="btm">
+            <div class="btm-con">
+                <!-- one -->
+              <span><a><img src="./images/1.jpg" alt=""></a>
+            <div class="text"><p>Reiche jetzt dein Rezept mit nutella ein!</p>
+            <button>Jetzt entdecken</button>
+            </div>
+            </span>
+              <!-- two -->
+              <span><a><img src="./images/2.webp" alt=""></a>
+                <div class="text"><p>Setz deinem Glas den Deckel auf!</p>
+            <button>Jetzt entdecken</button>
+        </div>
+            </span>
+              <!-- three -->
+              <span><a><img src="./images/3.webp" alt=""></a>
+            <div class="text"><p>Neu: Die nutella® baking community!</p>
+                <button>Jetzt entdecken</button>
+            </div>
+            </span>
+              <!-- four -->
+              <span><a><img src="./images/4.webp" alt=""></a>
+                <div class="text"><p>Exklusive Online-Produkte von nutella® sichern</p>
+            <button>Jetzt entdecken</button>
+        </div>
+            </span>
+              <!-- five -->
+              <span><a><img src="./images/5.webp" alt=""></a>
+            <div class="text"><p>Hast du unseren nutella® Muffin schon probiert?</p>
+                <button>Jetzt entdecken</button>
+            </div>
+            </span>
+              <!-- six -->
+              <span><a><img src="./images/6.webp" alt=""></a>
+            <div class="text"><p>nutella® & Brot</p>
+                <button>Jetzt entdecken</button>
+            </div>
+            </span>
+              <!-- seven -->
+              <span><a><img src="./images/7.webp" alt=""></a>
+            <div class="text"><p>nutella® Cafe</p>
+                <button>Jetzt entdecken</button>
+            </div>
+            </span>
+              <!-- eight -->
+              <span><a><img src="./images/8.webp" alt=""></a>
+            <div class="text"><p>nutella® <br> TV-Spots</p>
+                <button>Jetzt entdecken</button>
+            </div>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ===================== Products ================ -->
+      <div class="products">
+        <div class="products-con">
+          <div class="slides">
+            <div class="slides-con">
+              <div>
+                <a ><img src="./images/1.1.jpg" alt=""></a>
+                <h2>nutella & Go!</h2>
+              </div>
+              <div>
+                <a ><img src="./images/2.1.webp" alt=""></a>
+                <h2>nutella® Muffin</h2>
+              </div>
+              <div>
+                <a ><img src="./images/3.1.webp" alt=""></a>
+                <h2>nutella biscuits</h2>
+              </div>
+              <div>
+                <a ><img src="./images/4.1.webp" alt=""></a>
+                <h2>Exklusive nutella® Produkte</h2>
+              </div>
+            </div>
+          </div>
+          <div class="products-text">
+            <div>
+              <p>Produkte</p>
+              <h1>Für jeden Anlass <br> – nutella®!</h1>
+            </div>
+            <span>
+              <i class="fa-solid fa-angle-left"></i>
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- ============== social ================= -->
+      <div class="social">
+        <h2>Teile, was dir gefällt</h2>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+      <!-- ================= newsletter ============== -->
+      <div class="newsLetter">
+       <div class="newLetterCon">
+          <p>Lust auf Neues von Ferrero?</p>          
+            <button> <i class="fa-solid fa-envelope"></i> Zum newsletter anmelden</button>
+       </div>
+      </div>
+    </main>
+    <!-- ========================== FOOTER ================= -->
+    <footer>
+      <div class="footer-con">
+        <ul>
+          <p>Ferrero Websites</p>
+          <li><a href="">World nutella</a></li>
+          <li><a href="">Ferrero.com</a></li>
+          <li><a href="">Ferrero Sustainability</a></li>
+        </ul>
+        <ul>
+          <p>Entdecke nutella</p>
+          <li><a href="">Unser Engagement für Nachhaltigkeit</a></li>
+          <li><a href="">Unsere Qualität und unsere Zutaten</a></li>
+          <li><a href="">Aus leer mach mehr</a></li>
+        </ul>
+        <ul>
+          <p>Inspiration</p>
+          <li><a href="">Rezepte mit nutella</a></li>
+          <li><a href="">DIY-Ideen für dein leeres nutella</a></li>
+        </ul>
+        <ul>
+          <p>Was gibt’s Neues?</p>
+          <li><a href="">Deine Lieblingsrezepte</a></li>
+          <li><a href="">nutella® Küchenhelfer</a></li>
+          <li><a href="">nutella bakings & baqueens</a></li>
+        </ul>
+        <ul>
+          <p>Produkte</p>
+          <li><a href="">Jetzt bestellen</a></li>
+          <li><a href="">Exklusive nutella</a></li>
+          <li><a href="">nutella biscuits</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- ======================= SCRIPT =================== -->
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>
