@@ -205,12 +205,14 @@
         display: block;
         position: fixed;
         top: 0;
-        right: 0;
-        left: 0;
+         right: 0;
+        // left: 0;
         bottom: 0;
         z-index: 6;
+        width: 100%;
         background-color: $red;
         overflow: scroll;
+        white-space: nowrap;
         // display: none;
         .top-section {
           display: flex;
@@ -470,6 +472,7 @@
       }
     }
   }
+//   ================================= Keyframes =================
   @keyframes dropUp {
       from{
           height: 100vw;
@@ -485,5 +488,21 @@
       to{
           height: 0;
       }
+  }
+  @keyframes menuOpen {
+      from{
+         transform: translateX(100%);
+      }
+      to{
+        transform: translateX(0%);
+    }
+  }
+  @keyframes menuClose {
+    from{
+        transform: translateX(0%);
+     }
+     to{
+       transform: translateX(100%);
+   }
   }
 }
