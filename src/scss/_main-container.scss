@@ -472,7 +472,17 @@ body{
                 font-weight: bold;
             }
         }
+        @keyframes popA {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(100%);
+                opacity: 0.5;
+            }
+        }
         
     }
     
 }
+// ====================== 

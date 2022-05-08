@@ -2,7 +2,9 @@ pop.style.display = "block";
 let iX = () => {
   let pop = document.getElementById("pop");
   if (pop.style.display === "block") {
-    pop.style.display = "none";
+      pop.style.animationName = "popA"
+      pop.style.animationDuration = "2s"
+      setTimeout(() => (pop.style.display = "none"),1200)
   } else {
     pop.style.display = "block";
   }
