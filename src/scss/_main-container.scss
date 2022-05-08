@@ -3,6 +3,9 @@ main{
     .baner{
         width: 100%;
         position: relative;
+        .mo{
+            display: none;
+        }
         // img
         a{
             display: flex;
