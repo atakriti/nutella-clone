@@ -48,6 +48,7 @@ let btn1 = () => {
   let anchorList = document.querySelector(".anchorList");
   if (info1.style.display === "none") {
     info1.style.animationName = "listDown";
+    info1.style.animationDuration = "2s"
     info1.style.display = "block";
     // ==================== LIST properity ==============
     infoOne.style.backgroundColor = "white";
@@ -79,7 +80,8 @@ let btn2 = () => {
   let angelDown = document.querySelector(".angelDown2");
   let anchorList = document.querySelector(".anchorList2");
   if (info2.style.display === "none") {
-    info1.style.animationName = "drop1";
+    info2.style.animationName = "drop1";
+    info2.style.animationDuration = "2s"
     info1.style.display = "none";
     // ==================== LIST properity ==============
     infoOne.style.backgroundColor = "white";
@@ -111,7 +113,8 @@ let btn3 = () => {
   let angelDown = document.querySelector(".angelDown3");
   let anchorList = document.querySelector(".anchorList3");
   if (info3.style.display === "none") {
-    info1.style.animationName = "listDown";
+    info3.style.animationName = "listDown";
+    info3.style.animationDuration = "2s"
     info1.style.display = "none";
     info2.style.display = "none";
     info3.style.display = "block";
@@ -143,7 +146,8 @@ let btn4 = () => {
   let angelDown = document.querySelector(".angelDown4");
   let anchorList = document.querySelector(".anchorList4");
   if (info4.style.display === "none") {
-    info1.style.animationName = "listDown";
+    info4.style.animationName = "listDown";
+    info4.style.animationDuration = "2s"
     info1.style.display = "none";
     info2.style.display = "none";
     info3.style.display = "none";
